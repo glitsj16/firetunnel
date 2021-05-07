@@ -387,7 +387,6 @@ void print_timestamp(void);
 int blake2( void *out, size_t outlen, const void *in, size_t inlen, const void *key, size_t keylen );
 
 // secret.c
-uint8_t enc_dictionary[KEY_LEN * KEY_MAX];
 void init_keys(uint16_t port);
 uint8_t *get_hash(uint8_t *in, unsigned inlen, uint32_t timestamp, uint32_t seq);
 
